@@ -45,3 +45,12 @@ build/
 coinpay/dist/
 coinpay/build/
 
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+deployments/localhost/
+coverage/
+coverage.json
+*.sol.js
+

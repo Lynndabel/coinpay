@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "verify:base": "hardhat verify --network base",
+    "verify:base-sepolia": "hardhat verify --network baseSepolia"
   },
   "dependencies": {
     "next": "14.0.0",
@@ -16,7 +21,11 @@
     "ethers": "^6.8.0"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
     "autoprefixer": "^10.4.16",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
   }
